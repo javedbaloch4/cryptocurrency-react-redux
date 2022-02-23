@@ -13,6 +13,7 @@ function App() {
         </div>
         <div className="main">
           <Layout>
+            <Homepage />
               <div className="routes">
                 <Routes>
                   <Route exact element={<Homepage />} />
