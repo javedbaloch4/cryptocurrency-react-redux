@@ -13,13 +13,12 @@ function App() {
         </div>
         <div className="main">
           <Layout>
-            <Homepage />
-              <div className="routes">
+          <div className="routes">
                 <Routes>
-                  <Route exact element={<Homepage />} />
-                  <Route element={<Exchanges />} />
-                  <Route element={<Cryptocurrencies />} />
-                  <Route element={<CryptoDetails />} />
+                  <Route index element={<Homepage />} />
+                  <Route path="exchanges" element={<Exchanges />} />
+                  <Route path="cryptocurrencies" element={<Cryptocurrencies />} />
+                  <Route path="cryptodetails" element={<CryptoDetails />} />
                 </Routes>
               </div>
             </Layout>
